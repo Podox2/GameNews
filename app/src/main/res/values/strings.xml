@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GameNews</string>
+    <string name="news">News</string>
+    <string name="stories">Stories</string>
+    <string name="video">Video</string>
+    <string name="favourites">Favourites</string>
+    <string name="search">Search</string>
+    <string name="top">TOP</string>
+</resources>

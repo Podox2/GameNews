@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DefaultTextStyle">
+        <item name="android:textSize">@dimen/default_text</item>
+    </style>
+
+    <style name="BigBoldTextStyle" parent="DefaultTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/big_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BigBlackBoldTextStyle" parent="BigBoldTextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="BigWhiteBoldTextStyle" parent="BigBoldTextStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="GreyTextStyle" parent="DefaultTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="BlueTextStyle" parent="DefaultTextStyle">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+    </style>
+
+</resources>

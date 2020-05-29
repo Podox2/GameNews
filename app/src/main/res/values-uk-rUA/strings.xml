@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameNews</string>
+    <string name="favourites">Улюблені</string>
+    <string name="stories">Історії</string>
+    <string name="video">Відео</string>
+    <string name="news">Новини</string>
+    <string name="search">Пошук</string>
+    <string name="top">TOP</string>
+</resources>

@@ -7,6 +7,7 @@ import com.example.gamenews.data.remote.model.News
 import com.example.gamenews.data.repository.LocalRepo
 import com.example.gamenews.data.repository.newsrepository.NewsRepo
 import com.example.gamenews.base.BaseViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class NewsListViewModel(private val newsRepo: NewsRepo) : BaseViewModel() {
@@ -31,6 +32,7 @@ class NewsListViewModel(private val newsRepo: NewsRepo) : BaseViewModel() {
         viewModelScope.launch {
             showProgress()
             if (_newsList.value == null) {
+                delay(3000)
                 _newsList.value = newsRepo.getNews().await()
                 //get only top news
                 _topNewsList.value = _newsList.value?.filter {

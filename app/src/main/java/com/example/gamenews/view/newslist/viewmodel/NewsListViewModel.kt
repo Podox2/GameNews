@@ -32,7 +32,6 @@ class NewsListViewModel(private val newsRepo: NewsRepo) : BaseViewModel() {
         viewModelScope.launch {
             showProgress()
             if (_newsList.value == null) {
-                delay(3000)
                 _newsList.value = newsRepo.getNews().await()
                 //get only top news
                 _topNewsList.value = _newsList.value?.filter {
